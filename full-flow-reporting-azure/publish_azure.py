@@ -3,6 +3,7 @@ import requests
 import json
 import jsonpath
 from datetime import datetime
+import argparse
 
 def extract_test_case_data(file_path):
     # Parse the XML file
@@ -25,10 +26,13 @@ def extract_test_case_data(file_path):
 
     return test_case_names, test_case_results
 
-
+parser = argparse.ArgumentParser(description='Process a JUnit report.')
+parser.add_argument('report_path', help='The path to the JUnit report.')
 # Use the function
 #test_case_names, test_case_results = extract_test_case_data("parsed_report.junit.xml")
-testcaseNames, outcomes = extract_test_case_data("parsed_report.junit.xml")
+args = parser.parse_args()
+testcaseNames, outcomes = extract_test_case_data(args.report_path)
+#testcaseNames, outcomes = extract_test_case_data("parsed_report.junit.xml")
 print(testcaseNames)
 print(outcomes)
 organization = "PakEnergy"
