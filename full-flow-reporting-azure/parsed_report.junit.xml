@@ -1,0 +1,128 @@
+<testsuite name="WolfePak_Automation" tests="176" failures="35" errors="44" time="6269" skipped="16" timestamp="2024-05-22T15:59:00" hostname="VM-VDAR">
+	<testcase name="Test 1" time="30" classname="WolfePak_Automation.Misc.Login">
+		<system-out>---[Success] Attribute 'Text' of element for item 'WolfePak_AutomationRepository.RPStatusForm.label_selecting_company' does contain the specified value.---
+	[type] repoitem
+	[path] /form//form[@name='GetClientXForm']//text[@name='GetClientLbl' and @text='Company: ']
+	[itempath] .//form[@name='GetClientXForm']//text[@name='GetClientLbl' and @text='Company: ']
+	[fullname] WolfePak_AutomationRepository.RPStatusForm.label_selecting_company
+	[id] 3d71af01ac784f13a2dcd94183e74ebf
+	[timeout] 60000
+------------------------------------------------------------------------------------------------------------------------------
+</system-out>
+	</testcase>
+	<testcase name="Test 2" time="71" classname="WolfePak_Automation.General_Modules.Deposit_Entry.Deposit_Entry_Open_Item">
+		<error message="The test case has errors.">---[Failure] Attribute 'Caption' of element for item 'WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3' does not match the specified value (actual='000', expected='3').---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Validate_deposit_posted
+	[type] repoitem
+	[path] /form[@controlname~'MainForm']/form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[itempath] form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[fullname] WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3
+	[id] 4382976b83874965b361b43589f742d2
+	[timeout] 60000
+	[loglvl] Failure
+
+---[Error] The module has failed because one or more actions have failed.---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Validate_deposit_posted
+	[loglvl] Error
+
+---[Error] Failed to find item 'WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit'.&lt;br/&gt;No element found for path '/form[@name='glViewTrendFindForm']/text[@name='AccountEdit']' at step 'form[@name='glViewTrendFindForm']' after 621 attempts within 1m.---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Navigate_ViewTrend
+	[stacktrace]    at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.&lt;&gt;c__DisplayClass81_0`1.&lt;Find&gt;b__0()
+   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)
+   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at WolfePak_Automation.WolfePak_AutomationRepositoryFolders.ViewTrendFindAccountAppFolder.get_AccountEdit()
+   at WolfePak_Automation.Recordings.View_Trend.Navigate_ViewTrend.Ranorex.Core.Testing.ITestModule.Run()
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)
+	[type] repoitem
+	[path] /form[@name='glViewTrendFindForm']/text[@name='AccountEdit']
+	[itempath] text[@name='AccountEdit']
+	[fullname] WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit
+	[id] ea66c5f49cfc41e19d4845c9c373971e
+	[timeout] 60000
+	[failedStep] form[@name='glViewTrendFindForm']
+	[bestPathPrefix] 
+	[loglvl] Error
+
+</error>
+		<system-out>---[Success] Attribute 'Caption' of element for item 'WolfePak_AutomationRepository.GlMainForm1.DepositEntry.InvoiceUpdateFinished' does match the specified value.---
+	[type] repoitem
+	[path] /form[@controlname~'MainForm']/?/?/container[@name='StatsGrpBox']
+	[itempath] ?/?/container[@name='StatsGrpBox']
+	[fullname] WolfePak_AutomationRepository.GlMainForm1.DepositEntry.InvoiceUpdateFinished
+	[id] 32e08d20f92d4950b14c0dd0b4dc0022
+	[timeout] 60000
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---[Success] Attribute 'Caption' of element for item 'WolfePak_AutomationRepository.GlMainForm1.DepositEntry.NumberOfGLEntriesCreated' does match the specified value.---
+	[type] repoitem
+	[path] /form[@controlname~'MainForm']/form[@name='DepPostForm']/?/?/text[@name='GLEntriesLbl']
+	[itempath] form[@name='DepPostForm']/?/?/text[@name='GLEntriesLbl']
+	[fullname] WolfePak_AutomationRepository.GlMainForm1.DepositEntry.NumberOfGLEntriesCreated
+	[id] 2eed3a6faa9043b48ef0422dd8746217
+	[timeout] 60000
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---[Failure] Attribute 'Caption' of element for item 'WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3' does not match the specified value (actual='000', expected='3').---
+	[type] repoitem
+	[path] /form[@controlname~'MainForm']/form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[itempath] form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[fullname] WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3
+	[id] 4382976b83874965b361b43589f742d2
+	[timeout] 60000
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---[Error] The module has failed because one or more actions have failed.---
+----------------------------------------------------------------------------
+---[Error] Failed to find item 'WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit'.&lt;br/&gt;No element found for path '/form[@name='glViewTrendFindForm']/text[@name='AccountEdit']' at step 'form[@name='glViewTrendFindForm']' after 621 attempts within 1m.---
+	[stacktrace]    at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.&lt;&gt;c__DisplayClass81_0`1.&lt;Find&gt;b__0()
+   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)
+   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at WolfePak_Automation.WolfePak_AutomationRepositoryFolders.ViewTrendFindAccountAppFolder.get_AccountEdit()
+   at WolfePak_Automation.Recordings.View_Trend.Navigate_ViewTrend.Ranorex.Core.Testing.ITestModule.Run()
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)
+	[type] repoitem
+	[path] /form[@name='glViewTrendFindForm']/text[@name='AccountEdit']
+	[itempath] text[@name='AccountEdit']
+	[fullname] WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit
+	[id] ea66c5f49cfc41e19d4845c9c373971e
+	[timeout] 60000
+	[failedStep] form[@name='glViewTrendFindForm']
+	[bestPathPrefix] 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</system-out>
+		<system-err>---[Failure] Attribute 'Caption' of element for item 'WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3' does not match the specified value (actual='000', expected='3').---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Validate_deposit_posted
+	[type] repoitem
+	[path] /form[@controlname~'MainForm']/form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[itempath] form[@name='DepPostForm']/?/?/text[@name='NumGLEntriesLbl']
+	[fullname] WolfePak_AutomationRepository.GlMainForm1.DepositEntry.Text3
+	[id] 4382976b83874965b361b43589f742d2
+	[timeout] 60000
+	[loglvl] Failure
+
+---[Error] The module has failed because one or more actions have failed.---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Validate_deposit_posted
+	[loglvl] Error
+
+---[Error] Failed to find item 'WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit'.&lt;br/&gt;No element found for path '/form[@name='glViewTrendFindForm']/text[@name='AccountEdit']' at step 'form[@name='glViewTrendFindForm']' after 621 attempts within 1m.---
+	[modulepath] WolfePak_Automation\General_Modules\Deposit_Entry\Deposit_Entry_Open_Item\Post_Deposit_OI_DataIteration_1\Navigate_ViewTrend
+	[stacktrace]    at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.&lt;&gt;c__DisplayClass81_0`1.&lt;Find&gt;b__0()
+   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)
+   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at WolfePak_Automation.WolfePak_AutomationRepositoryFolders.ViewTrendFindAccountAppFolder.get_AccountEdit()
+   at WolfePak_Automation.Recordings.View_Trend.Navigate_ViewTrend.Ranorex.Core.Testing.ITestModule.Run()
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)
+	[type] repoitem
+	[path] /form[@name='glViewTrendFindForm']/text[@name='AccountEdit']
+	[itempath] text[@name='AccountEdit']
+	[fullname] WolfePak_AutomationRepository.ViewTrendFindAccount.AccountEdit
+	[id] ea66c5f49cfc41e19d4845c9c373971e
+	[timeout] 60000
+	[failedStep] form[@name='glViewTrendFindForm']
+	[bestPathPrefix] 
+	[loglvl] Error
+
+</system-err>
+	
+	</testcase>
+</testsuite>
